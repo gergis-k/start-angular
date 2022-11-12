@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    font-style: "Montserrat",
+    "Segoe UI", "Helvetica Neue", Arial, "Noto Sans",
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.separator{
+    margin: 1.25rem auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.separator-line {
+    width: 100%;
+    max-width: 7rem;
+    height: 0.25rem;
+    margin: auto 1.25rem;
+    border-radius: 1rem;
+}

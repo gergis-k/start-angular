@@ -1,0 +1,19 @@
+
+.master {
+    height: calc(100vh - 56px);   
+}
+
+.master .master-avatar {
+    vertical-align: middle;
+    width: 12rem;
+}
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .master .master-avatar {
+        width: 7rem;
+    }
+    .master {
+        height: calc(100vh - 50px);
+    }
+}

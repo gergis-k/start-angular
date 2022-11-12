@@ -1,0 +1,36 @@
+<section class="portfolio pb-5 text-center">
+    
+    <div class="container">
+        
+        <div class="row g-4">
+            
+            
+                <h2 class="display-6 mb-0 fw-bold" [style.color]="this._appData.primaryColor">PORTFOLIO</h2>
+                
+                <div class="separator" [style.color]="this._appData.primaryColor">
+                    <div class="separator-line" [style.backgroundColor]="this._appData.primaryColor"></div>
+                    <div class="separator-icon">
+                        <i class="fa-solid fa-star fa-2x"></i>
+                    </div>
+                    <div class="separator-line" [style.backgroundColor]="this._appData.primaryColor"></div>
+                </div>
+
+                <div *ngIf="this.data.length == 0">
+                    <h3>
+                        No items to display
+                    </h3>
+                </div>
+
+
+                <div class="col-sm-6 col-md-4" *ngFor="let item of this.data">
+
+                    <app-portfolio-item [itemData]="item" [basePath]="this.basPath">
+
+                    </app-portfolio-item>
+
+                </div>
+
+        </div>
+            
+    </div>
+</section>

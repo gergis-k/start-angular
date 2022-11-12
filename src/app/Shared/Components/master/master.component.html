@@ -1,0 +1,22 @@
+<section [style.backgroundColor]="this._appData.secondaryColor" class="master text-center">
+    <div class="container h-100">
+        <div class="w-100 h-100 d-flex align-items-center justify-content-center flex-column">
+            <img class="master-avatar mb-3" src="assets/imgs/avatar.svg" alt="Avatar">
+            
+            <h1 class="display-3 mb-0 fw-bold text-white">{{this._appData.title}}</h1>
+            
+            <div class="separator text-white">
+                <div class="separator-line bg-white"></div>
+                <div class="separator-icon">
+                    <i class="fa-solid fa-star fa-2x"></i>
+                </div>
+                <div class="separator-line bg-white"></div>
+            </div>
+
+            <p class="text-white fs-4 fw-normal">
+                {{this._appData.subTitles.slice(0, 3).join(' - ')}}
+            </p>
+       
+        </div>
+    </div>
+</section>

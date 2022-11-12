@@ -1,0 +1,14 @@
+
+.portfolio {
+    min-height: calc(100vh - 56px);   
+    padding-top: 5rem;
+}
+
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .portfolio {
+        min-height: calc(100vh - 56px);   
+        padding-top: 5rem;
+    }
+}

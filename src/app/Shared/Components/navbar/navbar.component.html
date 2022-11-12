@@ -1,0 +1,19 @@
+<nav class="navbar navbar-expand-md navbar-dark" [style.backgroundColor]="this._appData.primaryColor">
+    <div class="container px-5">
+        
+        <span class="navbar-brand mb-0 h1 user-select-none fw-bold" routerLinkActive="home">{{this._appData.title.toUpperCase()}}</span>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            Menu <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto my-3 my-md-0">
+                <li class="nav-item" *ngFor="let item of this._appData.listItems; let l = last">
+                    <a class="nav-link fw-semibold px-3" [ngClass]="{'mx-md-3 mx-0':!l, 'ms-md-3 ms-0':l}" routerLinkActive="rounded active" [routerLink]="item.toLowerCase()">{{item.toUpperCase()}}</a>
+                </li>
+            </ul>
+        </div>
+    
+    </div>
+</nav>

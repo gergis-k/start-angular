@@ -1,0 +1,59 @@
+<section class="contact pb-5 text-center">
+    
+    <div class="container">
+        
+        <div class="row mb-4">
+
+
+                <h2 class="display-6 mb-0 fw-bold" [style.color]="this._appData.primaryColor">CONTACT ME</h2>
+                
+                <div class="separator" [style.color]="this._appData.primaryColor">
+                    <div class="separator-line" [style.backgroundColor]="this._appData.primaryColor"></div>
+                    <div class="separator-icon">
+                        <i class="fa-solid fa-star fa-2x"></i>
+                    </div>
+                    <div class="separator-line" [style.backgroundColor]="this._appData.primaryColor"></div>
+                </div>
+
+
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <form>
+                    <div class="mb-3">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="floatingInputName" placeholder="Name">
+                            <label for="floatingInputName">Name</label>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="form-floating">
+                            <input type="email" class="form-control" id="floatingInputEmail" placeholder="Email Address">
+                            <label for="floatingInputEmail">Email Address</label>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="form-floating">
+                            <input type="tel" class="form-control" id="floatingInputPhone" placeholder="Phone Number">
+                            <label for="floatingInputPhone">Phone Number</label>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Message" id="floatingTextareaMessage" required="required" style="min-height: 120px;"></textarea>
+                            <label for="floatingTextareaMessage">Message</label>
+                        </div>
+                    </div>
+                    <div class="mb-3 text-end">
+                        <button class="btn btn-primary w-25" id="sendMessageButton" type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+            
+    </div>
+</section>

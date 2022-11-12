@@ -1,0 +1,47 @@
+<div class="card border-0 card-portfolio-item">
+    <img [src]="this.basePath+''+this.itemData.image" class="card-img" [alt]="this.itemData.image.toLowerCase()">
+    <div class="card-img-overlay d-flex align-items-center justify-content-center text-white h-100 w-100" (click)="open(content)">
+        <i class="fa-solid fa-plus fa-5x"></i>
+    </div>
+</div>
+
+
+<!-- 
+        id: number;
+        title: string;
+        description: string;
+        image: string;
+        tags: string[];
+ -->
+
+<ng-template #content let-c="close" let-d="dismiss">
+	<div class="modal-body text-center">
+        <h4 class="modal-title" id="modal-basic-title">{{this.itemData.title}}</h4>
+        <div class="separator" [style.color]="'#2c3e50'">
+            <div class="separator-line" [style.backgroundColor]="'#2c3e50'"></div>
+            <div class="separator-icon">
+                <i class="fa-solid fa-star fa-2x"></i>
+            </div>
+            <div class="separator-line" [style.backgroundColor]="'#2c3e50'"></div>
+        </div>
+
+        <img [src]="this.basePath+''+this.itemData.image" class="img-fluid mb-3" [alt]="this.itemData.image.toLowerCase()">
+        <p>
+            {{this.itemData.description}}
+        </p>
+
+        <h5>Tags</h5>
+        <ul class="list-inline">
+            <li *ngIf="this.itemData.tags.length == 0">
+                <span class="badge">...</span>
+            </li>
+            <li class="list-inline-item" *ngFor="let tag of this.itemData.tags">
+                <span class="badge">{{tag}}</span>
+            </li>
+        </ul>
+
+	</div>
+	<div class="modal-footer">
+		<button type="button" class="btn btn-outline-dark" (click)="c('Save click')">Close</button>
+	</div>
+</ng-template>

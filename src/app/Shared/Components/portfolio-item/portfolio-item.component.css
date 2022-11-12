@@ -1,0 +1,23 @@
+
+.card-portfolio-item {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    background-color: rgba(26, 188, 156, 0.9);
+}
+
+.card-img-overlay:hover {
+    opacity: 1;
+}
+
+.badge {
+    background-color: #1abc9c;
+}
